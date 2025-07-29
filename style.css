@@ -613,9 +613,10 @@ body {
 
 /* Skills Section */
 .skills {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 4rem;
 }
 
 .skills-container {
@@ -669,11 +670,11 @@ body {
 
 /* Custom colors for specific icons */
 .skill-item:has(.devicon-c-plain) i {
-  color: #00599c;
+  color: white;
 }
 
 .skill-item:has(.devicon-cplusplus-plain) i {
-  color: #00599c;
+  color: white;
 }
 
 .skill-item:has(.devicon-kotlin-plain) i {
@@ -735,9 +736,10 @@ body {
 
 /* Projects Section */
 .projects {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 4rem;
 }
 
 .projects-grid {
