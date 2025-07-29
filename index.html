@@ -3,159 +3,440 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryan Poonia</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 20px;
-    }
-
-    h1 {
-      font-size: 3rem;
-      color: #222;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-      color: #555;
-      margin-top: 10px;
-    }
-
-    .about, .skills, .projects {
-      max-width: 800px;
-      text-align: center;
-      margin-top: 30px;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    .skills ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0;
-      margin-top: 10px;
-    }
-
-    .skills li {
-      margin: 8px 15px;
-      background-color: #eee;
-      padding: 8px 14px;
-      border-radius: 20px;
-    }
-
-    .project-card {
-      background-color: #fafafa;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 20px 0;
-      text-align: left;
-    }
-
-    .project-card h3 {
-      margin-bottom: 8px;
-    }
-
-    .project-card p {
-      margin-bottom: 5px;
-    }
-
-    .links {
-      margin-top: 40px;
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .links a {
-      text-decoration: none;
-      color: #007bff;
-      border: 1px solid #007bff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      transition: all 0.2s ease-in-out;
-    }
-
-    .links a:hover {
-      background-color: #007bff;
-      color: white;
-    }
-
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+  <title>Aryan Poonia - Android Developer</title>
+  <meta name="description" content="Aryan Poonia - Android Developer and B.Tech student at IIIT Una specializing in Kotlin, Jetpack Compose, and modern app development.">
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
-  <h1>Aryan Poonia</h1>
-  <h2>Android Developer | B.Tech @ IIIT Una</h2>
-
-  <div class="about">
-    <p>I’m a 3rd year IT student at IIIT Una building Android apps using Kotlin and Jetpack Compose. Currently exploring DSA in C++ and backend with Spring Boot.</p>
-  </div>
-
-  <div class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>Kotlin</li>
-      <li>Jetpack Compose</li>
-      <li>Firebase</li>
-      <li>Room</li>
-      <li>MVVM</li>
-      <li>Spring Boot</li>
-      <li>Git</li>
-      <li>GitHub</li>
-    </ul>
-  </div>
-
-  <div class="projects">
-    <h2>Projects</h2>
-
-    <div class="project-card">
-      <h3>TimeOUT – Parental Control App</h3>
-      <p>Monitors and limits screen time for kids. Dual app system using Firebase and Jetpack Compose.</p>
-      <p><a href="https://github.com/Aryan0577/Parent" target="_blank">GitHub Parent</a> | <a href="https://github.com/Aryan0577/Child" target="_blank">GitHub Child</a></p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#about" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </div>
+  </nav>
 
-    <div class="project-card">
-      <h3>Saarthak – Accessibility App</h3>
-      <p>Helps visually impaired users with features like object detection and text reading using ML Kit and CameraX.</p>
-      <p><a href="https://github.com/Aryan0577/Saarthak-App" target="_blank">GitHub Repo</a></p>
-    </div>
+  <div class="container">
+    <section class="hero-section" id="about">
+      <div class="hero-container">
+        <div class="hero-header">
+          <h1 class="hero-title">
+            I'm <span class="name-highlight">Aryan Poonia</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            Android Developer & B.Tech Student @ IIIT Una
+          </h2>
+        </div>
+        <div class="hero-content">
+          <div class="hero-text">
+          <p class="hero-description">
+            I'm a 3rd year IT student at <span class="highlight">IIIT Una</span> passionate about building modern Android apps using 
+            <span class="highlight">Kotlin</span> and <span class="highlight">Jetpack Compose</span>. 
+            Currently exploring DSA in C++ and backend development with Spring Boot.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Learning</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#projects" class="btn-primary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-secondary">
+              <i class="fas fa-envelope"></i>
+              <span>Get In Touch</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="code-window android-studio">
+            <div class="android-header">
+              <div class="android-toolbar">
+                <div class="android-icon">
+                  <i class="fab fa-android"></i>
+                </div>
+                <div class="file-tab active">
+                  <span class="tab-icon">📄</span>
+                  <span class="tab-name">MainActivity.kt</span>
+                  <span class="tab-close">×</span>
+                </div>
+              </div>
+              <div class="android-actions">
+                <i class="fas fa-play-circle run-btn"></i>
+                <i class="fas fa-bug debug-btn"></i>
+              </div>
+            </div>
+            <div class="code-content">
+              <div class="code-line">
+                <span class="line-number">1</span>
+                <span class="code-text">
+                  <span class="keyword">class</span> 
+                  <span class="class-name">AndroidDeveloper</span> {
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">2</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;<span class="keyword">val</span> 
+                  <span class="variable">name</span> = 
+                  <span class="string">"Aryan Poonia"</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">3</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;<span class="keyword">val</span> 
+                  <span class="variable">skills</span> = 
+                  <span class="function">listOf</span>(
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">4</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"Kotlin"</span>, 
+                  <span class="string">"Jetpack Compose"</span>
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">5</span>
+                <span class="code-text">
+                  &nbsp;&nbsp;)
+                </span>
+              </div>
+              <div class="code-line">
+                <span class="line-number">6</span>
+                <span class="code-text">
+                  }
+                </span>
+              </div>
+            </div>
+            <div class="floating-elements">
+              <div class="tech-icon kotlin-icon">
+                <i class="devicon-kotlin-plain"></i>
+              </div>
+              <div class="tech-icon android-icon">
+                <i class="devicon-android-plain"></i>
+              </div>
+              <div class="tech-icon firebase-icon">
+                <i class="devicon-firebase-plain"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <h3>20-20-20 – Eye Strain Prevention App</h3>
-      <p>Notifies users to take breaks every 20 minutes using AlarmManager and Foreground Service.</p>
-    </div>
+    <section class="section skills" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-item">
+            <i class="devicon-c-plain colored"></i>
+            <span>C</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-cplusplus-plain colored"></i>
+            <span>C++</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-kotlin-plain colored"></i>
+            <span>Kotlin</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-android-plain colored"></i>
+            <span>Jetpack Compose</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-firebase-plain colored"></i>
+            <span>Firebase</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <span>Room</span>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-layer-group"></i>
+            <span>MVVM</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-spring-plain colored"></i>
+            <span>Spring Boot</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-git-plain colored"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-item">
+            <i class="devicon-github-original"></i>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section projects" id="projects">
+      <h2 class="section-title">Projects</h2>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>TimeOUT – Parental Control App</h3>
+            <div class="project-tags">
+              <span class="tag">Android</span>
+              <span class="tag">Kotlin</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Jetpack Compose</span>
+            </div>
+          </div>
+          <p class="project-description">
+            A comprehensive dual-app ecosystem designed to help parents monitor and manage their children's screen time effectively. 
+            The system consists of a parent control app and a child monitoring app that work seamlessly together.
+          </p>
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul>
+              <li>Real-time screen time monitoring and alerts</li>
+              <li>App usage tracking with detailed analytics</li>
+              <li>Remote device locking and time restrictions</li>
+              <li>Firebase real-time database synchronization</li>
+              <li>Modern UI built with Jetpack Compose</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Aryan0577/Parent" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i>
+              Parent App
+            </a>
+            <a href="https://github.com/Aryan0577/Child" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i>
+              Child App
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Saarthak – Accessibility App</h3>
+            <div class="project-tags">
+              <span class="tag">Android</span>
+              <span class="tag">ML Kit</span>
+              <span class="tag">CameraX</span>
+              <span class="tag">Accessibility</span>
+            </div>
+          </div>
+          <p class="project-description">
+            An innovative accessibility application designed to empower visually impaired users with advanced AI-powered features 
+            for better navigation and interaction with their environment.
+          </p>
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul>
+              <li>Real-time object detection and identification</li>
+              <li>Text recognition and audio readback</li>
+              <li>Voice commands and audio feedback</li>
+              <li>CameraX integration for optimized camera performance</li>
+              <li>Google ML Kit for accurate AI processing</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Aryan0577/Saarthak-App" target="_blank" class="project-link primary">
+              <i class="fab fa-github"></i>
+              View Repository
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <h3>20-20-20 – Eye Strain Prevention App</h3>
+            <div class="project-tags">
+              <span class="tag">Android</span>
+              <span class="tag">Health</span>
+              <span class="tag">AlarmManager</span>
+              <span class="tag">Background Services</span>
+            </div>
+          </div>
+          <p class="project-description">
+            A health-focused application that implements the 20-20-20 rule to reduce digital eye strain. 
+            The app reminds users to take regular breaks and look at distant objects to maintain eye health.
+          </p>
+          <div class="project-features">
+            <h4>Key Features:</h4>
+            <ul>
+              <li>Smart break reminders every 20 minutes</li>
+              <li>Foreground service for reliable notifications</li>
+              <li>Customizable break intervals and durations</li>
+              <li>Eye exercise suggestions and tips</li>
+              <li>Usage statistics and health insights</li>
+            </ul>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" class="project-link secondary disabled">
+              <i class="fab fa-github"></i>
+              Repository Coming Soon
+            </a>
+            <a href="#" target="_blank" class="project-link secondary disabled">
+              <i class="fas fa-mobile-alt"></i>
+              App Store Release Planned
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <div class="links">
-    <a href="mailto:aryzium@gmail.com">Email</a>
-    <a href="https://github.com/Aryan0577" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/aryan-poonia" target="_blank">LinkedIn</a>
-  </div>
-
-  <footer>
-    &copy; 2025 Aryan Poonia
+  <footer id="contact">
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="mailto:aryzium@gmail.com" class="footer-link" title="Email">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+        <a href="https://github.com/Aryan0577" target="_blank" class="footer-link" title="GitHub">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/aryan-poonia" target="_blank" class="footer-link" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div class="footer-text">
+        <p>&copy; 2025 Aryan Poonia. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Mobile Navigation Toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navbar = document.querySelector('.navbar');
+
+    navToggle.addEventListener('click', () => {
+      navToggle.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        navToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Navbar scroll effect
+    let lastScrollTop = 0;
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      // Show/hide navbar based on scroll direction
+      if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        // Scrolling up
+        navbar.style.transform = 'translateY(0)';
+      }
+      
+      // Add transparency effect
+      if (scrollTop > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScrollTop = scrollTop;
+
+      // Active navigation link based on scroll position
+      let current = '';
+      const sections = document.querySelectorAll('section[id], header[id]');
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollTop >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const headerOffset = 80;
+          const elementPosition = target.offsetTop;
+          const offsetPosition = elementPosition - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Typing animation for code window
+    const codeLines = document.querySelectorAll('.code-line');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          codeLines.forEach((line, index) => {
+            setTimeout(() => {
+              line.style.opacity = '1';
+              line.style.transform = 'translateX(0)';
+            }, index * 200);
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    const codeWindow = document.querySelector('.code-window');
+    if (codeWindow) {
+      observer.observe(codeWindow);
+    }
+  </script>
 </body>
 </html>
