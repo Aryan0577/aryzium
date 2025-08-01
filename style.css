@@ -641,20 +641,21 @@ body {
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 1.5rem;
-  text-align: center;
+  text-align: left;
   position: relative;
+  padding-left: 1rem;
 }
 
-.category-title::after {
+.category-title::before {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 3rem;
-  height: 2px;
-  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
-  border-radius: 1px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  border-radius: 2px;
 }
 
 .skills-grid {
@@ -744,6 +745,11 @@ body {
 .skill-item:has(.devicon-vscode-plain) i {
   color: #0078d4;
   text-shadow: 0 2px 4px rgba(0, 120, 212, 0.3);
+}
+
+.skill-item:has(.devicon-androidstudio-plain) i {
+  color: #3ddc84;
+  text-shadow: 0 2px 4px rgba(61, 220, 132, 0.3);
 }
 
 .skill-item::before {
@@ -1331,6 +1337,7 @@ footer::before {
   .category-title {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    padding-left: 0.75rem;
   }
   
   .skills-grid {
