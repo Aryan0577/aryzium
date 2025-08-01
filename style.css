@@ -670,11 +670,13 @@ body {
 
 /* Custom colors for specific icons */
 .skill-item:has(.devicon-c-plain) i {
-  color: white;
+  color: #1e40af;
+  text-shadow: 0 2px 4px rgba(30, 64, 175, 0.3);
 }
 
 .skill-item:has(.devicon-cplusplus-plain) i {
-  color: white;
+  color: #2563eb;
+  text-shadow: 0 2px 4px rgba(37, 99, 235, 0.3);
 }
 
 .skill-item:has(.devicon-kotlin-plain) i {
