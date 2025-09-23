@@ -653,14 +653,14 @@ body::-webkit-scrollbar {
 .skills-container {
   background: var(--bg-primary);
   border-radius: var(--border-radius-lg);
-  padding: 3rem 2rem;
+  padding: 3.5rem 2.5rem;
   margin-top: 2rem;
   box-shadow: var(--shadow-lg);
   border: 1px solid var(--border-color);
 }
 
 .skills-category {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .skills-category:last-child {
@@ -671,7 +671,7 @@ body::-webkit-scrollbar {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--text-primary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   text-align: left;
   position: relative;
   padding-left: 1rem;
@@ -691,14 +691,17 @@ body::-webkit-scrollbar {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
   justify-items: center;
+  align-items: start;
+  padding: 0 1rem;
+  max-width: 100%;
 }
 
 .skill-item {
   background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
-  padding: 1.5rem 1rem;
+  padding: 1.75rem 1.25rem;
   border-radius: var(--border-radius);
   text-align: center;
   font-weight: 500;
@@ -713,20 +716,25 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  width: 180px;
-  height: 120px;
+  width: 100%;
+  min-width: 160px;
+  max-width: 180px;
+  height: 130px;
+  margin: 0 auto;
 }
 
 .skill-item i {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   transition: var(--transition);
 }
 
 .skill-item span {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-primary);
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* Custom colors for specific icons */
@@ -742,6 +750,11 @@ body::-webkit-scrollbar {
 
 .skill-item:has(.devicon-kotlin-plain) i {
   color: #7f52ff;
+}
+
+.skill-item:has(.devicon-javascript-plain) i {
+  color: #f7df1e;
+  text-shadow: 0 2px 4px rgba(247, 223, 30, 0.3);
 }
 
 .skill-item:has(.devicon-android-plain) i {
@@ -760,8 +773,9 @@ body::-webkit-scrollbar {
   color: var(--accent-color);
 }
 
-.skill-item:has(.devicon-spring-plain) i {
-  color: #6db33f;
+.skill-item:has(.devicon-nodejs-plain) i {
+  color: #68a063;
+  text-shadow: 0 2px 4px rgba(104, 160, 99, 0.3);
 }
 
 .skill-item:has(.devicon-git-plain) i {
@@ -1357,18 +1371,31 @@ footer::before {
   }
   
   .skills-container {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1.5rem;
     margin: 1rem 0;
   }
   
   .skills-category {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
   
   .category-title {
     font-size: 1.3rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     padding-left: 0.75rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .skill-item {
+    min-width: 140px;
+    max-width: 160px;
+    height: 120px;
+    padding: 1.5rem 1rem;
   }
   
   .skills-grid {
@@ -1484,18 +1511,34 @@ footer::before {
     font-size: 2rem;
   }
   
+  .skills-container {
+    padding: 2rem 1rem;
+  }
+  
+  .skills-category {
+    margin-bottom: 2.5rem;
+  }
+  
+  .category-title {
+    font-size: 1.2rem;
+    margin-bottom: 1.25rem;
+  }
+  
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1.25rem;
+    padding: 0;
   }
   
   .skill-item {
-    width: 120px;
-    height: 100px;
-    padding: 1rem 0.5rem;
+    min-width: 130px;
+    max-width: 150px;
+    height: 110px;
+    padding: 1.25rem 0.75rem;
   }
   
   .skill-item i {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .skill-item span {
